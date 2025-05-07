@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -49,6 +48,24 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // 🔥 Dodano: Navigation Compose
+    implementation(libs.androidx.navigation.compose)
+
+    // 🔥 Dodano: Retrofit + Gson
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    // 🔥 Dodano: Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+    // 🔥 Dodano: ViewModel dla Compose
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    // 🔥 (opcjonalnie) Coil do ładowania obrazów
+    implementation(libs.coil.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
