@@ -23,14 +23,21 @@ class MainViewModel(private val repository: PostRepository = PostRepository()) :
 
     private fun loadPosts() {
         viewModelScope.launch {
+            println("START")
+            _isLoading.value = true
+            _error.value = null
             try {
-                _isLoading.value = true
                 _posts.value = repository.getPostsWithUsers()
+                println("SUCCESS")
             } catch (e: Exception) {
-                _error.value = e.message
+                println("ERROR: ${e.message}")
+                _error.value = "Failed to load data. Please check your internet connection."
             } finally {
+                println("FINALLY")
                 _isLoading.value = false
             }
         }
     }
+
 }
+
