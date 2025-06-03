@@ -1,8 +1,12 @@
 # Android Compose App – JSONPlaceholder Viewer
 
-## Gif prezentujący działanie aplikacji
+## Gify prezentujące działanie aplikacji
 
-<img src="https://github.com/user-attachments/assets/ac21acda-ffee-42e7-bc62-a07a9838890a" width="300"/>
+<img src="https://github.com/user-attachments/assets/8701f3ae-b12c-4ebd-9c16-d5155b11e176" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/ba286ae6-cb2b-4640-8f1c-1f2f6d938354" width="300"/>
+
+
 
 ---
 
@@ -12,7 +16,8 @@ Aplikacja mobilna na Androida zbudowana przy użyciu Jetpack Compose. Umożliwia
 
 - przeglądanie listy postów z informacjami o autorach,
 - przeglądanie szczegółów posta,
-- przeglądanie profilu użytkownika i jego zadań.
+- przeglądanie profilu użytkownika i jego zadań a także lokalizacji na mapie.
+- dodawanie swojego profilu i zdjęcia profilowego
 
 ---
 
@@ -35,17 +40,17 @@ Aplikacja mobilna na Androida zbudowana przy użyciu Jetpack Compose. Umożliwia
 #### Ekran szczegółów użytkownika
 - ✅ Pobieranie danych z `/users/{userId}`
 - ✅ Pobieranie zadań z `/todos?userId={userId}`
-- 🟡 Wyświetlanie danych użytkownika (walnąłem się w akcji i wyświetla dane ale nie wszystkie, ogarne potem :d)
+- 🟡 Wyświetlanie danych użytkownika (walnąłem się w akcji i wyświetla dane ale nie wszystkie)
 - ✅ Lista zadań z informacją o ukończeniu
 - ✅ Nawigacja powrotna
 
 #### Obsługa ładowania i błędów
 - ✅ Wyświetlanie wskaźnika ładowania (`CircularProgressIndicator`)
+- ✅ Gdy nie ma internetu internet pokazuje się błąd
 
 ## Ograniczenia i rzeczy, które nie działają (jeszcze)
-- 🟡 Obsługa błędów z komunikatem (no coś tam jest, ale nie działa bo jak nie ma internetu to ładuje w nieskonczoność, też ogarne potem bo nie starczyło czasu :v)
 - 🟡 Nawigacja jest bez przycisków, nawiguje się gestami/przyciskami nawigacji, nie wiem czy może tak być, dla mnie jest git ale jak trzeba będzie zmienić to zmienie
-- 🟡 Lista zadan nie przewija się wewnątrz tylko cały ekran (ogarnie się jeszcze na spokojnie)
+- 🟡 Lista zadan nie przewija się wewnątrz tylko cały ekran
   
 ## Technologie
 
