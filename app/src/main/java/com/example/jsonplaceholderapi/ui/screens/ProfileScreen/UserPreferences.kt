@@ -4,7 +4,9 @@ import android.content.Context
 import androidx.datastore.preferences.core.*
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.runBlocking
 
 private val Context.dataStore by preferencesDataStore("user_prefs")
 
@@ -19,6 +21,14 @@ class UserPreferences(private val context: Context) {
     val firstNameFlow: Flow<String?> = context.dataStore.data.map { it[FIRST_NAME] }
     val lastNameFlow: Flow<String?> = context.dataStore.data.map { it[LAST_NAME] }
     val profileImagePathFlow: Flow<String?> = context.dataStore.data.map { it[PROFILE_IMAGE_PATH] }
+//
+//    fun getFirstName(): String? = runBlocking {
+//        firstNameFlow.first()
+//    }
+//
+//    fun getLastName(): String? = runBlocking {
+//        lastNameFlow.first()
+//    }
 
     suspend fun saveUserData(firstName: String, lastName: String, imagePath: String) {
         context.dataStore.edit {
