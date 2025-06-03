@@ -16,7 +16,8 @@ Aplikacja mobilna na Androida zbudowana przy użyciu Jetpack Compose. Umożliwia
 
 - przeglądanie listy postów z informacjami o autorach,
 - przeglądanie szczegółów posta,
-- przeglądanie profilu użytkownika i jego zadań.
+- przeglądanie profilu użytkownika i jego zadań a także lokalizacji na mapie.
+- dodawanie swojego profilu i zdjęcia profilowego
 
 ---
 
