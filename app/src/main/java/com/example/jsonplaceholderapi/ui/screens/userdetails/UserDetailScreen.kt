@@ -60,6 +60,12 @@ fun UserDetailScreen(
                             Text("Telefon: ${user!!.phone}", color = Color.LightGray)
                             Text("Firma: ${user!!.company.name}", color = Color.LightGray)
                             Text("Miasto: ${user!!.address.city}", color = Color.LightGray)
+                            Text("Adres: ${user!!.address.street}, ${user!!.address.suite}, ${user!!.address.zipcode} ", color = Color.LightGray)
+                            Text("Nazwa Użytkownika: ${user!!.username}", color = Color.LightGray)
+                            Text("Strona: ${user!!.website}", color = Color.LightGray)
+
+
+
                             GoogleMapView(
                                 lat = user!!.address.geo.lat.toDouble(),
                                 lng = user!!.address.geo.lng.toDouble(),

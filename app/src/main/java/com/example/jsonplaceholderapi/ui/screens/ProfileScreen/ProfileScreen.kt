@@ -132,7 +132,7 @@ fun ProfileScreen(viewModel: ProfileViewModel = viewModel()) {
                             )
                             if (imageFile != null) {
                                 Text(
-                                    "Zdjęcie: ${imageFile.absolutePath}",
+                                    "Zdjęcie: ${imageFile!!.absolutePath}",
                                     style = MaterialTheme.typography.labelSmall,
                                     color = Color.LightGray
                                 )
